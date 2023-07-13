@@ -1,0 +1,105 @@
+.FormContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(99, 0, 52) 0%, rgb(73, 18, 184) 35%, rgb(42, 102, 215) 63%, rgb(0, 125, 255) 100%);
+}
+.FormContainer .FormBlock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 60%;
+  min-width: 500px;
+  padding: 10px;
+  padding-top: 50px;
+  background-color: white;
+  border-radius: 20px;
+}
+.FormContainer .FormBlock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+  height: 50px;
+  background: rgb(24, 24, 24);
+}
+.FormContainer .FormBlock form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+.FormContainer .FormBlock form h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 32px;
+  color: rgb(24, 24, 24);
+}
+.FormContainer .FormBlock form label {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.FormContainer .FormBlock form input {
+  height: 30px;
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgb(213, 213, 213);
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(24, 24, 24);
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+.FormContainer .FormBlock form button {
+  height: 40px;
+  width: 150px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  background-color: rgb(24, 24, 24);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  letter-spacing: 1px;
+}
+.FormContainer .FormBlock form button:hover {
+  background-color: rgb(38, 38, 38);
+}
+.FormContainer .FormBlock form .Quest {
+  margin-top: 5px;
+  color: rgb(24, 24, 24);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.FormContainer .FormBlock form .Quest a {
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+.FormContainer .FormBlock form .Quest a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  border-radius: 5px;
+  bottom: -4px;
+  background-color: rgb(38, 38, 38);
+  transition: width 0.2s;
+}
+.FormContainer .FormBlock form .Quest a:hover::before {
+  width: 100%;
+}
